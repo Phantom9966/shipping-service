@@ -1,11 +1,16 @@
 {
-  "name": "shipping-service",
+  "name": "shipping-service-25",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest tests",
+    "start": "node src/app.js"
   },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.x"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Phantom9966/shipping-service.git"
@@ -16,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/Phantom9966/shipping-service/issues"
   },
-  "homepage": "https://github.com/Phantom9966/shipping-service#readme"
+  "homepage": "https://github.com/Phantom9966/shipping-service#readme",
+  "devDependencies": {
+    "nock": "^10.0.6",
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1"
+  }
 }
